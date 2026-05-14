@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simeza, Sangwa & Associates</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&family=Crimson+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <button onclick="doCall()">📞 +260 211 227 484</button>
+    <button onclick="doWhatsApp()">💬 WhatsApp Us</button>
+  </div>
+  <div class="top-bar-right">
+    <span>Mon–Fri: 08:00–17:30</span>
+    <span style="opacity:0.4">|</span>
+    <span>Lusaka, Zambia</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <button class="nav-logo-btn" onclick="scrollTo_('home')">
+    <img src="images/logo.png" alt="Simeza, Sangwa & Associates Logo">
+    <div>
+      <span class="nav-logo-text">Simeza, Sangwa & Associates</span>
+      <span class="nav-logo-sub">Advocates &amp; Legal Consultants</span>
+    </div>
+  </button>
+  <ul class="nav-links">
+    <li><button onclick="scrollTo_('home')" class="nav-link-btn">Home</button></li>
+    <li><button onclick="scrollTo_('about')" class="nav-link-btn">About</button></li>
+    <li><button onclick="scrollTo_('practice')" class="nav-link-btn">Practice Areas</button></li>
+    <li><button onclick="scrollTo_('whyus')" class="nav-link-btn">Why Us</button></li>
+    <li><button onclick="scrollTo_('team')" class="nav-link-btn">Our Team</button></li>
+    <li><button onclick="scrollTo_('gallery')" class="nav-link-btn">Credentials</button></li>
+    <li><button onclick="scrollTo_('testimonials')" class="nav-link-btn">Testimonials</button></li>
+    <li><button onclick="scrollTo_('location')" class="nav-link-btn">Location</button></li>
+    <li><button onclick="scrollTo_('contact')" class="nav-link-btn">Contact</button></li>
+  </ul>
+  <button class="nav-cta-btn" onclick="doWhatsApp()">💬 WhatsApp Us</button>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="scrollTo_('home');closeMenu()">Home</button>
+  <button onclick="scrollTo_('about');closeMenu()">About</button>
+  <button onclick="scrollTo_('practice');closeMenu()">Practice Areas</button>
+  <button onclick="scrollTo_('whyus');closeMenu()">Why Us</button>
+  <button onclick="scrollTo_('team');closeMenu()">Our Team</button>
+  <button onclick="scrollTo_('gallery');closeMenu()">Credentials</button>
+  <button onclick="scrollTo_('testimonials');closeMenu()">Testimonials</button>
+  <button onclick="scrollTo_('location');closeMenu()">Location</button>
+  <button onclick="scrollTo_('contact');closeMenu()">Contact</button>
+  <button class="mob-cta" onclick="doWhatsApp();closeMenu()">💬 WhatsApp Us Now</button>
+</div>
+
+<!-- HERO -->
+<div id="home" style="padding-top:112px;">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-up">Zambia's Premier Business Law Firm</div>
+      <h1 class="fade-up delay-1">Zambia's<br>Most Trusted<br><em>Legal Counsel</em></h1>
+      <p class="hero-desc fade-up delay-2">For over two decades, Simeza, Sangwa & Associates has protected Zambia's most complex business interests — from landmark High Court victories to the deals that shape the country's economy. When the stakes are highest, you need the firm that has been here longest.</p>
+      <div class="hero-btns fade-up delay-3">
+        <button class="btn-wa" onclick="doWhatsApp()"><span>💬</span> WhatsApp Us</button>
+        <button class="btn-border" onclick="doCall()">📞 Call Now</button>
+      </div>
+    </div>
+    <div class="hero-image fade-up delay-2">
+      <img src="images/legal-consultation.jpg" alt="Legal consultation at Simeza, Sangwa & Associates">
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item anim-el"><div class="stat-num">500+</div><div class="stat-label">Cases Won Across Zambia</div></div>
+  <div class="stat-item anim-el"><div class="stat-num">20+</div><div class="stat-label">Years in Practice Since 2003</div></div>
+  <div class="stat-item anim-el"><div class="stat-num">98%</div><div class="stat-label">Client Satisfaction Rate</div></div>
+  <div class="stat-item anim-el"><div class="stat-num">8</div><div class="stat-label">Specialist Practice Areas</div></div>
+</div>
+
+<!-- CONSULTATION CTA STRIP -->
+<div class="consult-strip">
+  <div class="consult-strip-inner">
+    <div class="consult-strip-text">
+      <strong>Free Initial Consultation</strong>
+      <span>Speak directly with a specialist — no obligation, no charge. We assess your matter and tell you exactly where you stand.</span>
+    </div>
+    <button class="btn-wa" onclick="waEnquire('Free Consultation')"><span>💬</span> Book Your Free Consultation</button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+  <section>
+    <div class="about">
+      <div class="about-images anim-el">
+        <img src="images/scales-gavel.jpg" alt="Justice scales and law books" class="about-img-main">
+        <img src="images/document-signing.jpg" alt="Signing legal documents" class="about-img-accent">
+        <div class="about-badge"><span class="about-badge-num">20+</span><span class="about-badge-text">Years of Excellence</span></div>
+      </div>
+      <div class="anim-el">
+        <div class="section-eyebrow">About Our Firm</div>
+        <h2 class="section-title">A Legacy Built on <em>Trust</em> & Results</h2>
+        <p class="section-sub">Simeza, Sangwa & Associates is a full-service law firm with a focus on both <strong>contentious and non-contentious business</strong>. As one of the largest and fastest-growing firms in Zambia, we are dedicated to providing the highest levels of client service, skill, and expertise to both corporate and individual clients.</p>
+        <div class="about-points">
+          <div class="about-point"><div class="about-point-icon">⚖️</div><div><div class="about-point-title">Proven Legal Expertise</div><div class="about-point-desc">Specialists in their fields with a track record of landmark victories across Zambia's courts.</div></div></div>
+          <div class="about-point"><div class="about-point-icon">🛡️</div><div><div class="about-point-title">Client-Centered Approach</div><div class="about-point-desc">You are never just a case number — your outcome is our personal mission.</div></div></div>
+          <div class="about-point"><div class="about-point-icon">🤝</div><div><div class="about-point-title">Transparent Communication</div><div class="about-point-desc">Clear, honest counsel and regular updates throughout your entire legal journey.</div></div></div>
+        </div>
+        <button class="btn-wa" style="margin-top:32px;" onclick="doWhatsApp()"><span>💬</span> Chat With Us on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PRACTICE AREAS -->
+<div id="practice" style="background:var(--dark-mid);">
+  <section style="background:var(--dark-mid);">
+    <div class="practice-header">
+      <div>
+        <div class="section-eyebrow">What We Do</div>
+        <h2 class="section-title">Our <em>Practice</em> Areas</h2>
+      </div>
+      <p class="section-sub">From courtroom litigation to complex corporate negotiations, our team delivers exceptional legal representation across all domains.</p>
+    </div>
+    <div class="practice-grid">
+      <div class="practice-card anim-el" onclick="waEnquire('Advisory Services')">
+        <img src="images/advisory-law.jpg" alt="Advisory Services" class="practice-card-img">
+        <div class="practice-num">01</div><div class="practice-title">Advisory Services</div>
+        <div class="practice-desc">Strategic legal advice tailored to individuals and businesses — helping you make informed decisions with full understanding of your legal position and risks.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Company Secretarial')">
+        <img src="images/secretarial-services.jpg" alt="Company Secretarial" class="practice-card-img">
+        <div class="practice-num">02</div><div class="practice-title">Company Secretarial</div>
+        <div class="practice-desc">Full company secretarial support including statutory compliance, board resolutions, PACRA filings, and maintenance of company records and registers.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Corporate Advisory Services')">
+        <img src="images/advisory-services.jpg" alt="Corporate Advisory Services" class="practice-card-img">
+        <div class="practice-num">03</div><div class="practice-title">Corporate Advisory Services</div>
+        <div class="practice-desc">Expert counsel on corporate governance, mergers, restructuring, shareholder agreements, and regulatory compliance for businesses operating in Zambia.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Corporate Finance')">
+        <img src="images/corporate-finance.jpg" alt="Corporate Finance" class="practice-card-img">
+        <div class="practice-num">04</div><div class="practice-title">Corporate Finance</div>
+        <div class="practice-desc">Legal support for complex financing arrangements — project finance, debt structuring, securities, lending transactions, and capital market activities.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Energy, Mining & Natural Resources')">
+        <img src="images/resource-mining.jpg" alt="Energy Mining Natural Resources" class="practice-card-img">
+        <div class="practice-num">05</div><div class="practice-title">Energy, Mining & Natural Resources</div>
+        <div class="practice-desc">Specialist legal advice on mining licences, energy projects, environmental compliance, and natural resource contracts across Zambia's key extractive sectors.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Legal Services')">
+        <img src="images/Legal-services.jpg" alt="Legal Services" class="practice-card-img">
+        <div class="practice-num">06</div><div class="practice-title">Legal Services</div>
+        <div class="practice-desc">Comprehensive legal representation across civil, commercial, and regulatory matters — from drafting and review to full courtroom advocacy at all levels.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Property & Conveyance')">
+        <img src="images/Conveyance-law.jpg" alt="Property and Conveyance" class="practice-card-img">
+        <div class="practice-num">07</div><div class="practice-title">Property & Conveyance</div>
+        <div class="practice-desc">End-to-end property transaction support — title searches, transfer of ownership, lease agreements, mortgage bonds, and all conveyancing formalities under Zambian land law.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+      <div class="practice-card anim-el" onclick="waEnquire('Receivership & Insolvency')">
+        <img src="images/document-signing.jpg" alt="Receivership and Insolvency" class="practice-card-img">
+        <div class="practice-num">08</div><div class="practice-title">Receivership & Insolvency</div>
+        <div class="practice-desc">Expert guidance through corporate rescue, receivership appointments, liquidation proceedings, and insolvency restructuring — protecting creditor and stakeholder interests.</div>
+        <button class="practice-wa-btn">💬 Enquire on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- WHY US -->
+<div id="whyus" class="whyus-section">
+  <section style="background:var(--dark-mid);">
+    <div class="whyus-header">
+      <div class="section-eyebrow">Why Choose Us</div>
+      <h2 class="section-title">Why <em>Simeza, Sangwa & Associates</em><br>Over Any Other Firm</h2>
+      <p class="section-sub">Whether your matter is contentious or non-contentious, we bring the same depth of expertise and commitment to every client — here is why Zambia's leading businesses choose us.</p>
+    </div>
+
+    <!-- VS BAR -->
+    <div class="vs-bar anim-el">
+      <div class="vs-col">
+        <div class="vs-col-title us">✦ Simeza, Sangwa & Associates</div>
+        <ul class="vs-list">
+          <li><span class="check">✓</span> Specialist lawyer assigned to your case</li>
+          <li><span class="check">✓</span> WhatsApp response within 1 hour</li>
+          <li><span class="check">✓</span> Free initial consultation — no obligation</li>
+          <li><span class="check">✓</span> Transparent fees — no hidden costs</li>
+          <li><span class="check">✓</span> 20+ years of Zambian courtroom experience</li>
+          <li><span class="check">✓</span> You speak directly to your lawyer — always</li>
+        </ul>
+      </div>
+      <div class="vs-divider">
+        <div class="vs-line"></div>
+        <div class="vs-circle">VS</div>
+        <div class="vs-line"></div>
+      </div>
+      <div class="vs-col">
+        <div class="vs-col-title them">Most Other Firms</div>
+        <ul class="vs-list them">
+          <li><span class="cross">✗</span> Generalist lawyers handling everything</li>
+          <li><span class="cross">✗</span> Slow responses — days or weeks</li>
+          <li><span class="cross">✗</span> Charge for every consultation</li>
+          <li><span class="cross">✗</span> Surprise invoices after the fact</li>
+          <li><span class="cross">✗</span> Junior staff handle your case</li>
+          <li><span class="cross">✗</span> You deal with receptionists and paralegals</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6 REASON CARDS -->
+    <div class="whyus-grid">
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">01</span>
+        <span class="whyus-icon">⚡</span>
+        <div class="whyus-title">WhatsApp Response in Under 1 Hour</div>
+        <div class="whyus-desc">When you have a legal emergency, waiting days for a callback is not acceptable. Our team is reachable on WhatsApp <strong>every working day</strong> and responds fast — because justice doesn't wait.</div>
+      </div>
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">02</span>
+        <span class="whyus-icon">🎯</span>
+        <div class="whyus-title">Specialist Assigned to Your Case</div>
+        <div class="whyus-desc">You don't get a generalist. You get the <strong>exact lawyer who specialises</strong> in your situation — whether it's medical negligence, family law, or corporate disputes. Specialists win more.</div>
+      </div>
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">03</span>
+        <span class="whyus-icon">🔓</span>
+        <div class="whyus-title">Free Consultation — No Obligation</div>
+        <div class="whyus-desc">Your first conversation with us costs you nothing. We assess your case honestly and tell you exactly where you stand — <strong>before you spend a single kwacha</strong>.</div>
+      </div>
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">04</span>
+        <span class="whyus-icon">💎</span>
+        <div class="whyus-title">Transparent Fees. Zero Surprises.</div>
+        <div class="whyus-desc">We agree on fees upfront and in writing. <strong>No hidden charges. No surprise invoices.</strong> You always know exactly what you're paying and why.</div>
+      </div>
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">05</span>
+        <span class="whyus-icon">🏆</span>
+        <div class="whyus-title">500+ Successful Cases in Zambia</div>
+        <div class="whyus-desc">Over two decades, we have won cases that others said couldn't be won. Our <strong>98% client satisfaction rate</strong> is built on results — not promises.</div>
+      </div>
+      <div class="whyus-card anim-el">
+        <span class="whyus-num">06</span>
+        <span class="whyus-icon">🤝</span>
+        <div class="whyus-title">You Talk to Your Lawyer. Directly.</div>
+        <div class="whyus-desc">At most firms, you speak to receptionists and paralegals. Here, <strong>your lawyer picks up the WhatsApp</strong>. Your case gets the personal attention it deserves — every single time.</div>
+      </div>
+    </div>
+
+    <div class="whyus-cta-wrap anim-el">
+      <p>Still deciding? One free conversation will tell you everything you need to know.</p>
+      <button class="btn-wa" style="display:inline-flex;" onclick="waEnquire('Free Consultation')">⚡ Claim Your Free Consultation Now</button>
+    </div>
+  </section>
+</div>
+
+<!-- TEAM -->
+<div id="team" style="background:var(--dark);">
+  <section style="background:var(--dark);">
+    <div class="section-eyebrow">Meet the Team</div>
+    <h2 class="section-title">The <em>Lawyers</em> Fighting for You</h2>
+    <p class="section-sub" style="margin-bottom:60px;">Real attorneys. Real expertise. Every case at Simeza, Sangwa & Associates is handled by a qualified specialist in that field.</p>
+    <div class="team-grid">
+
+      <!-- Mwelwa Simeza - Senior Partner -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/mwelwa-simeza.jpg" alt="Mwelwa Simeza">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Managing Partner – Mwelwa Simeza')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Mwelwa Simeza</div>
+          <div class="team-title">Senior Partner</div>
+          <div class="team-spec">Corporate & Contract Law</div>
+          <p class="team-bio">Founder and Senior Partner with years of experience advising Zambia's leading corporations on complex transactions, corporate governance, and high-stakes commercial disputes.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Corporate Advisory – Mwelwa Simeza')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 2 - Civil Litigation -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/chanda-sangwa.jpg" alt="Chanda Sangwa">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Commercial Law')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Chanda Sangwa</div>
+          <div class="team-title">Senior Partner</div>
+          <div class="team-spec">Commercial Law &amp; Transactions</div>
+          <p class="team-bio">A seasoned commercial lawyer with deep expertise in structuring major business transactions, mergers, acquisitions, and corporate finance across multiple sectors in Zambia.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Commercial Law – Chanda Sangwa')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 3 - Criminal & Court -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/kalumba-nkonde.jpg" alt="Kalumba Nkonde">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Court Litigation')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Kalumba Nkonde</div>
+          <div class="team-title">Principal Associate</div>
+          <div class="team-spec">Commercial Litigation & Arbitration</div>
+          <p class="team-bio">A commanding presence in Zambia's High and Supreme Courts, Kalumba specialises in contentious business disputes, arbitration, and complex commercial litigation.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Commercial Litigation – Kalumba Nkonde')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 4 - Family Law -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/natasha-mbewe.jpg" alt="Natasha Mbewe">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Property & Conveyance')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Natasha Mbewe</div>
+          <div class="team-title">Senior Associate</div>
+          <div class="team-spec">Property & Conveyancing</div>
+          <p class="team-bio">Natasha leads the firm's property practice, handling complex conveyancing, title disputes, lease agreements, and mortgage transactions with meticulous attention to detail.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Property & Conveyance – Natasha Mbewe')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 5 - Medical Negligence -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/bwalya-mutati.jpg" alt="Bwalya Mutati">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Energy, Mining & Natural Resources')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Bwalya Mutati</div>
+          <div class="team-title">Senior Associate</div>
+          <div class="team-spec">Energy, Mining & Natural Resources</div>
+          <p class="team-bio">Bwalya advises mining companies, energy firms, and government bodies on licensing, environmental compliance, joint ventures, and natural resource contracts across Zambia.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Energy, Mining & Natural Resources – Bwalya Mutati')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 6 - Real Estate -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/lombe-chileshe.jpg" alt="Lombe Chileshe">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Company Secretarial')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Lombe Chileshe</div>
+          <div class="team-title">Senior Associate</div>
+          <div class="team-spec">Company Secretarial & Compliance</div>
+          <p class="team-bio">Lombe manages statutory compliance, PACRA filings, board resolutions, and company records for a portfolio of leading Zambian and multinational corporations.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Company Secretarial – Lombe Chileshe')">💬 Enquire</button>
+        </div>
+      </div>
+
+      <!-- Lawyer 7 - Employment Law -->
+      <div class="team-card anim-el">
+        <div class="team-img-wrap">
+          <img src="images/mutinta-hamusonde.jpg" alt="Mutinta Hamusonde">
+          <div class="team-overlay">
+            <button class="team-wa-btn" onclick="waEnquire('Receivership & Insolvency')">💬 WhatsApp</button>
+          </div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Mutinta Hamusonde</div>
+          <div class="team-title">Senior Associate</div>
+          <div class="team-spec">Receivership & Insolvency</div>
+          <p class="team-bio">Mutinta guides creditors, directors, and stakeholders through insolvency proceedings, corporate rescue, and liquidation — protecting interests at every stage of the process.</p>
+          <button class="team-contact-btn" onclick="waEnquire('Receivership & Insolvency – Mutinta Hamusonde')">💬 Enquire</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- CREDIBILITY SECTION (replaces gallery) -->
+<div id="gallery">
+  <section>
+    <div class="section-eyebrow">Our Credentials</div>
+    <h2 class="section-title">Built on <em>Decades</em> of Trust</h2>
+    <div class="cred-grid">
+      <div class="cred-card anim-el">
+        <div class="cred-icon">🏛️</div>
+        <div class="cred-title">Licensed Advocates</div>
+        <div class="cred-desc">Fully registered and licensed under the Law Association of Zambia — holding ourselves to the highest standards of professional conduct.</div>
+      </div>
+      <div class="cred-card anim-el">
+        <div class="cred-icon">⚖️</div>
+        <div class="cred-title">High & Supreme Court</div>
+        <div class="cred-desc">Our advocates appear regularly before Zambia's High Court and Supreme Court, with a track record spanning landmark commercial and civil matters.</div>
+      </div>
+      <div class="cred-card anim-el">
+        <div class="cred-icon">🏢</div>
+        <div class="cred-title">Corporate & Individual</div>
+        <div class="cred-desc">From Zambia's largest corporations to individuals navigating complex legal situations — we bring the same depth of expertise to every client.</div>
+      </div>
+      <div class="cred-card anim-el">
+        <div class="cred-icon">🌍</div>
+        <div class="cred-title">Fastest-Growing Firm</div>
+        <div class="cred-desc">Recognised as one of the largest and fastest-growing law firms in Zambia, consistently expanding our specialist capabilities across all practice areas.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- TESTIMONIALS -->
+<div id="testimonials" style="background:var(--dark-mid);">
+  <section style="background:var(--dark-mid);">
+    <div class="section-eyebrow">Client Voices</div>
+    <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+    <div class="testimonials-source anim-el">
+      <span class="gmap-badge">⭐ Verified Google Reviews</span>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Honestly a professional setting and impressive customer service just upon entry. Keep it up Simeza Sangwa.</p>
+        <div class="testimonial-author">Naomi Mwananyau</div>
+        <div class="testimonial-role">Google Review · Lusaka</div>
+      </div>
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Quick and professional. Exactly what you want from a law firm when it matters most.</p>
+        <div class="testimonial-author">Niza Kasanya</div>
+        <div class="testimonial-role">Google Review · Lusaka</div>
+      </div>
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Amazing Law Firm. Their dedication to their clients is second to none.</p>
+        <div class="testimonial-author">Edmor Mulenga</div>
+        <div class="testimonial-role">Google Review · 66 Reviews in Lusaka</div>
+      </div>
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★☆</div>
+        <p class="testimonial-text">They are ready to help and quite open to people. A firm that genuinely listens.</p>
+        <div class="testimonial-author">Natasha Azariah Tanzala</div>
+        <div class="testimonial-role">Google Review · Lusaka</div>
+      </div>
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★☆</div>
+        <p class="testimonial-text">Great legal practitioners. Knowledgeable, approachable, and results-driven.</p>
+        <div class="testimonial-author">Kifita Kimbonyi</div>
+        <div class="testimonial-role">Google Review · 69 Reviews in Lusaka</div>
+      </div>
+      <div class="testimonial-card anim-el">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">One of the largest and fastest-growing firms in the country — dedicated to providing the highest levels of client service, skill, and expertise to both corporate and individual clients.</p>
+        <div class="testimonial-author">From the Owner</div>
+        <div class="testimonial-role">Simeza, Sangwa & Associates · Google Business</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- LOCATION -->
+<div id="location" style="background:var(--dark-mid); border-top:1px solid var(--border);">
+  <section style="background:var(--dark-mid);">
+    <div class="section-eyebrow">Find Us</div>
+    <h2 class="section-title" style="margin-bottom:60px;">Our <em>Location</em></h2>
+    <div class="location-grid">
+      <div class="location-map anim-el">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.2!2d28.3219!3d-15.3989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408df6aa77fb7d%3A0xd8bbdc9873646cd8!2sSimeza%2C%20Sangwa%20%26%20Associates%2C%20Stand%204713%20Corner%20United%20Nations%20%26%20Ngumbo%20Rd%2C%20Lusaka%2010101!5e0!3m2!1sen!2szm!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Simeza, Sangwa & Associates Location, Ntemwa House Lusaka"></iframe>
+      </div>
+      <div class="anim-el">
+        <div class="location-detail-item">
+          <div class="loc-icon">📍</div>
+          <div><div class="loc-label">Office Address</div><div class="loc-value">Vitumbiko, Stand 4713<br>Corner United Nations &amp; Ngumbo Road<br>Lusaka 10101, Zambia</div></div>
+        </div>
+        <div class="location-detail-item">
+          <div class="loc-icon">📞</div>
+          <div><div class="loc-label">Phone</div><div class="loc-value"><button onclick="doCall()">+260 211 227 484</button></div></div>
+        </div>
+        <div class="location-detail-item">
+          <div class="loc-icon">💬</div>
+          <div><div class="loc-label">WhatsApp</div><div class="loc-value"><button onclick="doWhatsApp()">+260 211 227 484</button></div></div>
+        </div>
+        <div class="location-detail-item" style="border:none;">
+          <div class="loc-icon">🕐</div>
+          <div><div class="loc-label">Working Hours</div><div class="loc-value">Mon–Fri: 08:00–17:30<br><span style="color:var(--text-muted);font-size:0.82rem">Saturday: 09:00–13:00 &nbsp;|&nbsp; Sunday: Closed</span></div></div>
+        </div>
+        <button class="btn-wa" style="margin-top:28px;width:100%;justify-content:center;" onclick="doDirections()">📍 Get Directions on Google Maps</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT / WA FORM -->
+<div id="contact">
+  <section>
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2 class="section-title" style="margin-bottom:60px;">Contact Us <em>Instantly</em><br>via WhatsApp</h2>
+    <div class="contact-grid">
+      <!-- Left: info + big CTA -->
+      <div class="contact-info-block">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div><div class="contact-item-label">Phone</div><div class="contact-item-value"><button onclick="doCall()">+260 211 227 484</button></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div><div class="contact-item-label">WhatsApp</div><div class="contact-item-value"><button onclick="doWhatsApp()">+260 211 227 484</button></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><div class="contact-item-label">Office</div><div class="contact-item-value">Vitumbiko, Stand 4713<br>Corner United Nations &amp; Ngumbo Road<br>Lusaka 10101, Zambia</div></div>
+        </div>
+        <div class="contact-item" style="border:none;">
+          <div class="contact-icon">🕐</div>
+          <div><div class="contact-item-label">Hours</div><div class="contact-item-value">Mon–Fri: 08:00–17:30<br><span style="color:var(--text-muted);font-size:0.82rem">Sat: 09:00–13:00</span></div></div>
+        </div>
+        <button class="big-wa-btn" onclick="doWhatsApp()">
+          <span class="wa-icon">💬</span>
+          Open WhatsApp Now
+        </button>
+        <button class="btn-border" style="width:100%;justify-content:center;margin-top:12px;" onclick="doCall()">📞 Call +260 211 227 484</button>
+      </div>
+
+      <!-- Right: WhatsApp message builder -->
+      <div class="wa-form-wrap anim-el">
+        <div class="wa-form-title">Send Us a Message</div>
+        <div class="wa-form-sub">Fill in your details below and click <span>Send via WhatsApp</span> — your message will open directly in WhatsApp, ready to send.</div>
+        <div class="form-row">
+          <div class="form-group"><label for="fname">Your Name *</label><input type="text" id="fname" placeholder="John Banda"></div>
+          <div class="form-group"><label for="fphone">Phone Number</label><input type="tel" id="fphone" placeholder="+260 7XX XXX XXX"></div>
+        </div>
+        <div class="form-group">
+          <label for="fservice">Practice Area</label>
+          <select id="fservice">
+            <option value="">Select a practice area...</option>
+            <option>Advisory Services</option>
+            <option>Company Secretarial</option>
+            <option>Corporate Advisory Services</option>
+            <option>Corporate Finance</option>
+            <option>Energy, Mining &amp; Natural Resources</option>
+            <option>Civil & Commercial Litigation</option>
+            <option>Property &amp; Conveyance</option>
+            <option>Receivership &amp; Insolvency</option>
+            <option>Other / General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="fmessage">Your Message *</label><textarea id="fmessage" placeholder="Briefly describe your legal matter..."></textarea></div>
+        <button class="btn-send-wa" onclick="sendViaWhatsApp()"><span>💬</span> Send via WhatsApp</button>
+        <div class="form-note">✓ Opens WhatsApp with your message pre-filled &nbsp;·&nbsp; No app login required</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo-text">Simeza, Sangwa & Associates</div>
+      <div class="footer-logo-sub">Advocates &amp; Legal Consultants</div>
+      <p>Delivering justice with integrity for over two decades. Your rights are our priority.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Quick Links</div>
+      <ul>
+        <li><button onclick="scrollTo_('home')">Home</button></li>
+        <li><button onclick="scrollTo_('about')">About Us</button></li>
+        <li><button onclick="scrollTo_('practice')">Practice Areas</button></li>
+        <li><button onclick="scrollTo_('team')">Our Team</button></li>
+        <li><button onclick="scrollTo_('gallery')">Credentials</button></li>
+        <li><button onclick="scrollTo_('testimonials')">Testimonials</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Practice Areas</div>
+      <ul>
+        <li><button onclick="scrollTo_('practice')">Advisory Services</button></li>
+        <li><button onclick="scrollTo_('practice')">Corporate Finance</button></li>
+        <li><button onclick="scrollTo_('practice')">Energy &amp; Mining</button></li>
+        <li><button onclick="scrollTo_('practice')">Property &amp; Conveyance</button></li>
+        <li><button onclick="scrollTo_('practice')">Receivership &amp; Insolvency</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><button onclick="doCall()">📞 +260 211 227 484</button></li>
+        <li><button onclick="doWhatsApp()">💬 WhatsApp Us</button></li>
+        <li><button onclick="scrollTo_('location')">📍 Our Location</button></li>
+        <li><button onclick="scrollTo_('contact')">✉ Send a Message</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Simeza, Sangwa & Associates. All rights reserved.</div>
+    <div class="footer-badge">Licensed Advocates, Republic of Zambia</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-actions">
+  <div class="float-wrap">
+    <button class="float-btn float-wa-btn" onclick="doWhatsApp()" title="WhatsApp Us">💬</button>
+    <span class="float-tip">WhatsApp Us</span>
+  </div>
+  <div class="float-wrap">
+    <button class="float-btn float-call-btn" onclick="doCall()" title="Call Us">📞</button>
+    <span class="float-tip">Call Us Now</span>
+  </div>
+</div>
+
+<!-- CALL MODAL FALLBACK -->
+<div id="callModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999; align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#16161E; border:1px solid rgba(201,168,76,0.3); padding:40px 36px; max-width:400px; width:100%; text-align:center; position:relative;">
+    <button onclick="closeCallModal()" style="position:absolute; top:14px; right:18px; background:none; border:none; color:#9E9A90; font-size:1.8rem; cursor:pointer; line-height:1;">×</button>
+    <div style="font-size:2.5rem; margin-bottom:16px;">📞</div>
+    <div style="font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; color:#E8E4DC; margin-bottom:8px;">Call Us Directly</div>
+    <div style="font-size:0.78rem; color:#9E9A90; margin-bottom:28px; line-height:1.6;">Tap the number below to call Simeza, Sangwa &amp; Associates.</div>
+    <a href="tel:+260211227484" style="display:block; background:#C9A84C; color:#0A0A0F; font-family:'Montserrat',sans-serif; font-size:1.25rem; font-weight:700; letter-spacing:0.06em; padding:18px 24px; text-decoration:none; margin-bottom:12px; border:none;">
+      📞 &nbsp;+260 211 227 484
+    </a>
+    <button onclick="closeCallModal(); doWhatsApp();" style="width:100%; background:#25D366; color:#fff; font-family:'Montserrat',sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; border:none; cursor:pointer; padding:14px; display:flex; align-items:center; justify-content:center; gap:8px;">
+      💬 WhatsApp Instead
+    </button>
+    <div style="font-size:0.65rem; color:#9E9A90; margin-top:16px;">Mon–Fri 08:00–17:30 &nbsp;·&nbsp; Sat 09:00–13:00</div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
